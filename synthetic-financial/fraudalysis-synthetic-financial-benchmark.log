@@ -1,0 +1,135 @@
+[{"stream_name":"stdout","time":2.724993511,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":2.7250598310000003,"data":"  FRAUDALYSIS — SYNTHETIC FINANCIAL BENCHMARK\n"}
+,{"stream_name":"stdout","time":2.725065212,"data":"  GPU-Accelerated Analysis\n"}
+,{"stream_name":"stdout","time":2.725067884,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":2.725070663,"data":"\n"}
+,{"stream_name":"stdout","time":2.725073257,"data":"Loading dataset...\n"}
+,{"stream_name":"stdout","time":26.589467787,"data":"✅ Loaded 6,362,620 rows (1.42 GB) in 20.37s\n"}
+,{"stream_name":"stdout","time":26.589521992,"data":"Columns: ['step', 'type', 'amount', 'nameOrig', 'oldbalanceOrg', 'newbalanceOrig', 'nameDest', 'oldbalanceDest', 'newbalanceDest', 'isFraud', 'isFlaggedFraud']\n"}
+,{"stream_name":"stdout","time":26.589529052,"data":"\n"}
+,{"stream_name":"stdout","time":26.58953457,"data":"──────────────────────────────────────────────────\n"}
+,{"stream_name":"stdout","time":26.589540376,"data":"  1. TRANSACTION OVERVIEW\n"}
+,{"stream_name":"stdout","time":26.589545321,"data":"──────────────────────────────────────────────────\n"}
+,{"stream_name":"stdout","time":26.58955095,"data":"Total transactions: 6,362,620\n"}
+,{"stream_name":"stdout","time":26.615130137,"data":"Time steps: 1 to 743 (742 hours)\n"}
+,{"stream_name":"stdout","time":27.021485492,"data":"\n"}
+,{"stream_name":"stdout","time":27.021521157,"data":"Transaction Types:\n"}
+,{"stream_name":"stdout","time":27.021616407,"data":"      CASH_OUT: 2,237,500 (35.17%)\n"}
+,{"stream_name":"stdout","time":27.021625812,"data":"       PAYMENT: 2,151,495 (33.81%)\n"}
+,{"stream_name":"stdout","time":27.021630263,"data":"       CASH_IN: 1,399,284 (21.99%)\n"}
+,{"stream_name":"stdout","time":27.021634387,"data":"      TRANSFER:  532,909 ( 8.38%)\n"}
+,{"stream_name":"stdout","time":27.02166366,"data":"         DEBIT:   41,432 ( 0.65%)\n"}
+,{"stream_name":"stdout","time":27.021691738,"data":"\n"}
+,{"stream_name":"stdout","time":27.021697425,"data":"──────────────────────────────────────────────────\n"}
+,{"stream_name":"stdout","time":27.02170657,"data":"  2. FRAUD DETECTION RESULTS\n"}
+,{"stream_name":"stdout","time":27.021709896,"data":"──────────────────────────────────────────────────\n"}
+,{"stream_name":"stdout","time":27.56938598,"data":"Fraud cases detected: 8,213 (0.1291%)\n"}
+,{"stream_name":"stdout","time":27.569441648,"data":"Flagged fraud: 16\n"}
+,{"stream_name":"stdout","time":27.569448561,"data":"Legitimate transactions: 6,354,407\n"}
+,{"stream_name":"stdout","time":27.569453911,"data":"\n"}
+,{"stream_name":"stdout","time":27.569459083,"data":"Fraud by Transaction Type:\n"}
+,{"stream_name":"stdout","time":28.257696663,"data":"      CASH_OUT:  4,116 / 2,237,500 (0.18%)\n"}
+,{"stream_name":"stdout","time":28.757171396,"data":"      TRANSFER:  4,097 / 532,909 (0.77%)\n"}
+,{"stream_name":"stdout","time":28.757207234,"data":"\n"}
+,{"stream_name":"stdout","time":28.757214404,"data":"──────────────────────────────────────────────────\n"}
+,{"stream_name":"stdout","time":28.757221445,"data":"  3. AMOUNT ANALYSIS\n"}
+,{"stream_name":"stdout","time":28.757244947,"data":"──────────────────────────────────────────────────\n"}
+,{"stream_name":"stdout","time":28.757410084,"data":"\n"}
+,{"stream_name":"stdout","time":28.757425838,"data":"Fraud Amounts:\n"}
+,{"stream_name":"stdout","time":28.75765728,"data":"  Min:             0.00\n"}
+,{"stream_name":"stdout","time":28.757698021,"data":"  Max:      10000000.00\n"}
+,{"stream_name":"stdout","time":28.75941357,"data":"  Mean:      1467967.30\n"}
+,{"stream_name":"stdout","time":28.759971464,"data":"  Median:     441423.44\n"}
+,{"stream_name":"stdout","time":28.759987323,"data":"\n"}
+,{"stream_name":"stdout","time":28.759991363,"data":"Legitimate Amounts:\n"}
+,{"stream_name":"stdout","time":28.765362432,"data":"  Min:             0.01\n"}
+,{"stream_name":"stdout","time":28.771043789,"data":"  Max:      92445516.64\n"}
+,{"stream_name":"stdout","time":28.784280871,"data":"  Mean:       178197.04\n"}
+,{"stream_name":"stdout","time":28.912535846,"data":"  Median:      74684.72\n"}
+,{"stream_name":"stdout","time":28.912570096,"data":"\n"}
+,{"stream_name":"stdout","time":28.912574976,"data":"──────────────────────────────────────────────────\n"}
+,{"stream_name":"stdout","time":28.912580461,"data":"  4. MACHINE LEARNING MODEL\n"}
+,{"stream_name":"stdout","time":28.91258459,"data":"──────────────────────────────────────────────────\n"}
+,{"stream_name":"stdout","time":32.450051774,"data":"Training on 24,639 samples (8,213 fraud, 16,426 legitimate)\n"}
+,{"stream_name":"stdout","time":33.358381946,"data":"Model trained in 0.90s\n"}
+,{"stream_name":"stdout","time":33.456219014,"data":"\n"}
+,{"stream_name":"stdout","time":33.456280542,"data":"ROC-AUC Score: 0.9994\n"}
+,{"stream_name":"stdout","time":33.456287908,"data":"\n"}
+,{"stream_name":"stdout","time":33.456292969,"data":"Classification Report:\n"}
+,{"stream_name":"stdout","time":33.463746277,"data":"              precision    recall  f1-score   support\n"}
+,{"stream_name":"stdout","time":33.463784901,"data":"\n"}
+,{"stream_name":"stdout","time":33.463789364,"data":"  Legitimate       1.00      0.99      0.99      3285\n"}
+,{"stream_name":"stdout","time":33.463811614,"data":"       Fraud       0.99      0.99      0.99      1643\n"}
+,{"stream_name":"stdout","time":33.463833542,"data":"\n"}
+,{"stream_name":"stdout","time":33.463839264,"data":"    accuracy                           0.99      4928\n"}
+,{"stream_name":"stdout","time":33.463846546,"data":"   macro avg       0.99      0.99      0.99      4928\n"}
+,{"stream_name":"stdout","time":33.463852462,"data":"weighted avg       0.99      0.99      0.99      4928\n"}
+,{"stream_name":"stdout","time":33.463858097,"data":"\n"}
+,{"stream_name":"stdout","time":33.490111954,"data":"\n"}
+,{"stream_name":"stdout","time":33.490134124,"data":"Feature Importances:\n"}
+,{"stream_name":"stdout","time":33.495244853,"data":"       feature  importance\n"}
+,{"stream_name":"stdout","time":33.4952882,"data":" oldbalanceOrg    0.346366\n"}
+,{"stream_name":"stdout","time":33.495294934,"data":"        amount    0.203063\n"}
+,{"stream_name":"stdout","time":33.495299847,"data":"newbalanceOrig    0.173639\n"}
+,{"stream_name":"stdout","time":33.495304992,"data":"  type_encoded    0.161728\n"}
+,{"stream_name":"stdout","time":33.49532313,"data":"oldbalanceDest    0.060221\n"}
+,{"stream_name":"stdout","time":33.495327931,"data":"newbalanceDest    0.054983\n"}
+,{"stream_name":"stdout","time":33.495331577,"data":"\n"}
+,{"stream_name":"stdout","time":33.495334935,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":33.495338494,"data":"  BENCHMARK RESULTS SUMMARY\n"}
+,{"stream_name":"stdout","time":33.495342016,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":33.499276742,"data":"{\n"}
+,{"stream_name":"stdout","time":33.4992978,"data":"  \"dataset\": \"Synthetic Financial Datasets For Fraud Detection\",\n"}
+,{"stream_name":"stdout","time":33.499301803,"data":"  \"source\": \"https://www.kaggle.com/datasets/ealaxi/paysim1\",\n"}
+,{"stream_name":"stdout","time":33.499304482,"data":"  \"total_tansactions\": 6362620,\n"}
+,{"stream_name":"stdout","time":33.499322874,"data":"  \"fraud_cases\": 8213,\n"}
+,{"stream_name":"stdout","time":33.499327376,"data":"  \"fraud_rate_percent\": 0.1291,\n"}
+,{"stream_name":"stdout","time":33.499331742,"data":"  \"flagged_fraud\": 16,\n"}
+,{"stream_name":"stdout","time":33.499335498,"data":"  \"transaction_types\": {\n"}
+,{"stream_name":"stdout","time":33.499339864,"data":"    \"CASH_OUT\": 2237500,\n"}
+,{"stream_name":"stdout","time":33.499344266,"data":"    \"PAYMENT\": 2151495,\n"}
+,{"stream_name":"stdout","time":33.499348003,"data":"    \"CASH_IN\": 1399284,\n"}
+,{"stream_name":"stdout","time":33.49935206,"data":"    \"TRANSFER\": 532909,\n"}
+,{"stream_name":"stdout","time":33.499355972,"data":"    \"DEBIT\": 41432\n"}
+,{"stream_name":"stdout","time":33.499359545,"data":"  },\n"}
+,{"stream_name":"stdout","time":33.499362964,"data":"  \"ml_mode\": \"Random Forest (100 trees)\",\n"}
+,{"stream_name":"stdout","time":33.499366802,"data":"  \"roc_auc_score\": 0.9994,\n"}
+,{"stream_name":"stdout","time":33.499370438,"data":"  \"processing_time_seconds\": 21.27,\n"}
+,{"stream_name":"stdout","time":33.499374006,"data":"  \"gpu_accelerated\": false,\n"}
+,{"stream_name":"stdout","time":33.499379642,"data":"  \"top_features\": [\n"}
+,{"stream_name":"stdout","time":33.499387159,"data":"    {\n"}
+,{"stream_name":"stdout","time":33.499389868,"data":"      \"feature\": \"oldbalanceOrg\",\n"}
+,{"stream_name":"stdout","time":33.499392358,"data":"      \"importance\": 0.34636617209463316\n"}
+,{"stream_name":"stdout","time":33.499394818,"data":"    },\n"}
+,{"stream_name":"stdout","time":33.499397079,"data":"    {\n"}
+,{"stream_name":"stdout","time":33.499399396,"data":"      \"feature\": \"amount\",\n"}
+,{"stream_name":"stdout","time":33.499401805,"data":"      \"importance\": 0.2030625379849821\n"}
+,{"stream_name":"stdout","time":33.499404238,"data":"    },\n"}
+,{"stream_name":"stdout","time":33.499406496,"data":"    {\n"}
+,{"stream_name":"stdout","time":33.499408804,"data":"      \"feature\": \"newbalanceOrig\",\n"}
+,{"stream_name":"stdout","time":33.499413892,"data":"      \"importance\": 0.17363899396097807\n"}
+,{"stream_name":"stdout","time":33.499416317,"data":"    },\n"}
+,{"stream_name":"stdout","time":33.499418883,"data":"    {\n"}
+,{"stream_name":"stdout","time":33.499421233,"data":"      \"feature\": \"type_encoded\",\n"}
+,{"stream_name":"stdout","time":33.499423602,"data":"      \"importance\": 0.16172785007387802\n"}
+,{"stream_name":"stdout","time":33.499425976,"data":"    },\n"}
+,{"stream_name":"stdout","time":33.499428224,"data":"    {\n"}
+,{"stream_name":"stdout","time":33.499437518,"data":"      \"feature\": \"oldbalanceDest\",\n"}
+,{"stream_name":"stdout","time":33.499440124,"data":"      \"importance\": 0.06022104290362115\n"}
+,{"stream_name":"stdout","time":33.499442537,"data":"    },\n"}
+,{"stream_name":"stdout","time":33.499444792,"data":"    {\n"}
+,{"stream_name":"stdout","time":33.499447146,"data":"      \"feature\": \"newbalanceDest\",\n"}
+,{"stream_name":"stdout","time":33.499449588,"data":"      \"importance\": 0.05498340298190754\n"}
+,{"stream_name":"stdout","time":33.499452061,"data":"    }\n"}
+,{"stream_name":"stdout","time":33.49945438,"data":"  ]\n"}
+,{"stream_name":"stdout","time":33.499456752,"data":"}\n"}
+,{"stream_name":"stdout","time":33.499459059,"data":"\n"}
+,{"stream_name":"stdout","time":33.499461298,"data":"✅ Results saved to /kaggle/working/results.json\n"}
+,{"stream_name":"stdout","time":33.499464337,"data":"✅ Notebook complete\n"}
+,{"stream_name":"stderr","time":36.429910303,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":36.429960385,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":36.750697758,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":36.750724258,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":38.44637092,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":39.751654911,"data":"[NbConvertApp] Writing 308993 bytes to __results__.html\n"}
+]

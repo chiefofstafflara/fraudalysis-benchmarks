@@ -1,0 +1,45 @@
+{
+  "dataset": "Synthetic Financial Datasets For Fraud Detection",
+  "source": "https://www.kaggle.com/datasets/ealaxi/paysim1",
+  "total_tansactions": 6362620,
+  "fraud_cases": 8213,
+  "fraud_rate_percent": 0.1291,
+  "flagged_fraud": 16,
+  "transaction_types": {
+    "CASH_OUT": 2237500,
+    "PAYMENT": 2151495,
+    "CASH_IN": 1399284,
+    "TRANSFER": 532909,
+    "DEBIT": 41432
+  },
+  "ml_mode": "Random Forest (100 trees)",
+  "roc_auc_score": 0.9994,
+  "processing_time_seconds": 21.27,
+  "gpu_accelerated": false,
+  "top_features": [
+    {
+      "feature": "oldbalanceOrg",
+      "importance": 0.34636617209463316
+    },
+    {
+      "feature": "amount",
+      "importance": 0.2030625379849821
+    },
+    {
+      "feature": "newbalanceOrig",
+      "importance": 0.17363899396097807
+    },
+    {
+      "feature": "type_encoded",
+      "importance": 0.16172785007387802
+    },
+    {
+      "feature": "oldbalanceDest",
+      "importance": 0.06022104290362115
+    },
+    {
+      "feature": "newbalanceDest",
+      "importance": 0.05498340298190754
+    }
+  ]
+}

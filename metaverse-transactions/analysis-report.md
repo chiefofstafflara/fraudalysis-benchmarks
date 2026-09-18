@@ -1,4 +1,4 @@
-# Metaverse Financial Transactions — Fradualysis Test Results
+# Metaverse Financial Transactions — Fraudalysis Test Results
 
 **Date:** September 2026
 **Source:** Kaggle — faizaniftikharjanjua/metaverse-financial-transactions-dataset
@@ -9,7 +9,7 @@
 
 ## Overview
 
-Fradualysis benchmark test against the Metaverse Financial Transactions dataset — blockchain transaction data from the Open Metaverse. Dataset includes sending/receiving addresses, amounts, transaction types (scam, phishing, transfer, sale, purchase), behavioural patterns, risk scores, and fraud labels.
+Fraudalysis benchmark test against the Metaverse Financial Transactions dataset — blockchain transaction data from the Open Metaverse. Dataset includes sending/receiving addresses, amounts, transaction types (scam, phishing, transfer, sale, purchase), behavioural patterns, risk scores, and fraud labels.
 
 ---
 
@@ -45,4 +45,4 @@ Fradualysis benchmark test against the Metaverse Financial Transactions dataset 
 
 ## Conclusion
 
-Fradualysis successfully processed and analysed 78,600 blockchain transactions on standard CPU infrastructure in under 2 seconds. The system correctly identified all fraudulent activity in the dataset. These results validate Fradualysis's detection methodology and its readiness for real-world deployment.
+Fraudalysis successfully processed and analysed 78,600 blockchain transactions on standard CPU infrastructure in under 2 seconds. The system correctly identified all fraudulent activity in the dataset. These results validate Fraudalysis's detection methodology and its readiness for real-world deployment.

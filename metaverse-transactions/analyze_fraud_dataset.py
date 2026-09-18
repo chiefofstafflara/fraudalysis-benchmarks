@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fradualysis - Metaverse Financial Transactions Dataset Analysis"""
+"""Fraudalysis - Metaverse Financial Transactions Dataset Analysis"""
 
 import csv
 import json
@@ -160,7 +160,7 @@ def analyze(rows):
     
     # Recommendation
     print(f"\n  🎯 RECOMMENDATION:")
-    print(f"     This dataset is highly relevant for Fradualysis testing.")
+    print(f"     This dataset is highly relevant for Fraudalysis testing.")
     print(f"     It contains blockchain addresses, multiple fraud types,")
     print(f"     and risk scoring — directly applicable patterns.")
     
