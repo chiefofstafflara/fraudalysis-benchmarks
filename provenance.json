@@ -1,0 +1,51 @@
+{
+  "_comment": "Run provenance for the published benchmark figures. Sources: Kaggle kernel lastRunTime via `kaggle kernels list --user larachiefofstaff --csv` (authoritative server-side run time), and the captured results.json for each run. Future runs stamp their own timestamps into results.json via run_provenance; the three Kaggle datasets below predate that change and are dated from the Kaggle API instead.",
+  "last_verified_aest": "2026-10-03 01:12 AEST",
+  "method": "Kaggle API lastRunTime (UTC), converted to AEST (UTC+10, Brisbane, no DST).",
+  "datasets": [
+    {
+      "id": "synthetic-financial",
+      "page_title": "Synthetic Financial Datasets For Fraud Detection",
+      "kaggle_kernel": "larachiefofstaff/fraudalysis-synthetic-financial-benchmark",
+      "run_timestamp_utc": "2026-09-18T13:10:16Z",
+      "run_timestamp_aest": "2026-09-18 23:10 AEST",
+      "date_source": "kaggle_api_lastRunTime",
+      "rows": 6362608,
+      "roc_auc_score": 0.9994
+    },
+    {
+      "id": "creditcard",
+      "page_title": "Credit Card Fraud Detection",
+      "kaggle_kernel": "larachiefofstaff/fraudalysis-creditcard-benchmark",
+      "run_timestamp_utc": "2026-10-02T14:17:58Z",
+      "run_timestamp_aest": "2026-10-03 00:17 AEST",
+      "date_source": "kaggle_api_lastRunTime",
+      "rows": 284807,
+      "roc_auc_score": 0.9775
+    },
+    {
+      "id": "ethereum",
+      "page_title": "Ethereum Fraud Detection Dataset",
+      "kaggle_kernel": "larachiefofstaff/fraudalysis-ethereum-benchmark",
+      "run_timestamp_utc": "2026-10-02T14:17:59Z",
+      "run_timestamp_aest": "2026-10-03 00:17 AEST",
+      "date_source": "kaggle_api_lastRunTime",
+      "rows": 9841,
+      "unit_of_analysis": "address",
+      "roc_auc_score": 0.9879
+    },
+    {
+      "id": "metaverse",
+      "page_title": "Open Metaverse Financial Transactions",
+      "kaggle_kernel": null,
+      "run_timestamp_utc": null,
+      "run_timestamp_aest": null,
+      "date_source": "not_applicable",
+      "note": "Never run as a Kaggle kernel, so there is no Kaggle run time to report. Analysed locally with metaverse-transactions/analyze_fraud_dataset.py. No machine-readable results.json was produced for this dataset: the figures below come from its analysis-report.md, which reports detection rate rather than a ROC-AUC score.",
+      "rows": 78600,
+      "fraud_rate_percent": 8.26,
+      "reported_metric": "100% detection",
+      "roc_auc_score": null
+    }
+  ]
+}

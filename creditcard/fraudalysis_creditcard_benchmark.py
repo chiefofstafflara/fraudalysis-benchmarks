@@ -14,6 +14,8 @@ import numpy as np
 import json
 import time
 import os
+import datetime
+import platform
 
 print("=" * 60)
 print("  FRAUDALYSIS — CREDIT CARD FRAUD BENCHMARK")
@@ -175,8 +177,26 @@ print(f"\n{'='*60}")
 print("  BENCHMARK RESULTS SUMMARY")
 print(f"{'='*60}")
 
+# Run provenance. The published benchmark figures are only credible if a reader
+# can tell WHEN they were produced. The captured Kaggle logs record only
+# elapsed seconds, so previously there was no way to date a run from its
+# results.json. This stamps the wall clock at generation time (UTC, plus the
+# AEST offset the organisation reports in), along with the interpreter and
+# library versions, so any figure can be traced to the exact run that produced it.
+_run_started_utc = datetime.datetime.now(datetime.timezone.utc)
+_aest = datetime.timezone(datetime.timedelta(hours=10))  # Brisbane, no DST
+run_provenance = {
+    'run_timestamp_utc': _run_started_utc.isoformat(timespec='seconds'),
+    'run_timestamp_aest': _run_started_utc.astimezone(_aest).strftime('%Y-%m-%d %H:%M AEST'),
+    'run_date_aest': _run_started_utc.astimezone(_aest).strftime('%Y-%m-%d'),
+    'python_version': platform.python_version(),
+    'numpy_version': np.__version__,
+    'pandas_version': pd.__version__,
+}
+
 results = {
     'dataset': 'Credit Card Fraud Detection',
+    'run_provenance': run_provenance,
     'source': 'https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud',
     'total_transactions': int(len(df)),
     'fraud_cases': int(len(fraud)),
