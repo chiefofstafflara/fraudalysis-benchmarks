@@ -1,0 +1,76 @@
+{
+  "dataset": "Credit Card Fraud Detection",
+  "source": "https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud",
+  "total_transactions": 284807,
+  "fraud_cases": 492,
+  "fraud_rate_percent": 0.1727,
+  "amount_stats": {
+    "fraud_mean": 122.21,
+    "fraud_median": 9.25,
+    "fraud_max": 2125.87,
+    "legit_mean": 88.29,
+    "legit_median": 22.0,
+    "legit_max": 25691.16
+  },
+  "ml_mode": "Random Forest (100 trees)",
+  "roc_auc_score": 0.9775,
+  "precision_fraud": 0.9884,
+  "recall_fraud": 0.8673,
+  "confusion_matrix": [
+    [
+      295,
+      1
+    ],
+    [
+      13,
+      85
+    ]
+  ],
+  "processing_time_seconds": 12.37,
+  "gpu_accelerated": false,
+  "gpu_present": true,
+  "gpu_name": "Tesla T4",
+  "hardware_note": "Kaggle notebook runtime; CPU-based scikit-learn estimators (no GPU acceleration used)",
+  "top_features": [
+    {
+      "feature": "V10",
+      "importance": 0.16785184766406405
+    },
+    {
+      "feature": "V14",
+      "importance": 0.1346625482226628
+    },
+    {
+      "feature": "V12",
+      "importance": 0.10069999809081426
+    },
+    {
+      "feature": "V4",
+      "importance": 0.09916104715589237
+    },
+    {
+      "feature": "V11",
+      "importance": 0.09568690921837394
+    },
+    {
+      "feature": "V17",
+      "importance": 0.07882077762140521
+    },
+    {
+      "feature": "V7",
+      "importance": 0.05567221725307556
+    },
+    {
+      "feature": "V16",
+      "importance": 0.0490058192549856
+    },
+    {
+      "feature": "V3",
+      "importance": 0.045742514098878494
+    },
+    {
+      "feature": "V2",
+      "importance": 0.018696641650784305
+    }
+  ]
+}

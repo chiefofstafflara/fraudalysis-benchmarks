@@ -1,0 +1,91 @@
+{
+  "dataset": "Ethereum Fraud Detection Dataset",
+  "source": "https://www.kaggle.com/datasets/vagifa/ethereum-frauddetection-dataset",
+  "unit_of_analysis": "address",
+  "unit_note": "Each row is one Ethereum address with aggregated behavioural features, not a single transaction.",
+  "total_addresses": 9841,
+  "fraud_cases": 2179,
+  "fraud_rate_percent": 22.1421,
+  "unique_addresses": 9816,
+  "ml_mode": "Random Forest (100 trees)",
+  "roc_auc_score": 0.9879,
+  "precision_fraud": 0.9713,
+  "recall_fraud": 0.8532,
+  "confusion_matrix": [
+    [
+      1522,
+      11
+    ],
+    [
+      64,
+      372
+    ]
+  ],
+  "processing_time_seconds": 0.89,
+  "gpu_accelerated": false,
+  "gpu_present": true,
+  "gpu_name": "Tesla T4",
+  "hardware_note": "Kaggle notebook runtime; CPU-based scikit-learn estimators (no GPU acceleration used)",
+  "top_features": [
+    {
+      "feature": "Time Diff between first and last (Mins)",
+      "importance": 0.09435602121804448
+    },
+    {
+      "feature": "total ether received",
+      "importance": 0.06951237693081333
+    },
+    {
+      "feature": "Unique Received From Addresses",
+      "importance": 0.069497705269954
+    },
+    {
+      "feature": "max value received",
+      "importance": 0.06582890581537566
+    },
+    {
+      "feature": "avg val received",
+      "importance": 0.06313739077647228
+    },
+    {
+      "feature": "ERC20 min val rec",
+      "importance": 0.06179745702477635
+    },
+    {
+      "feature": "Avg min between received tnx",
+      "importance": 0.05623073529428972
+    },
+    {
+      "feature": "total transactions (including tnx to create contract",
+      "importance": 0.05611797348461575
+    },
+    {
+      "feature": "total ether balance",
+      "importance": 0.048149672240626024
+    },
+    {
+      "feature": "Received Tnx",
+      "importance": 0.04444327782644091
+    },
+    {
+      "feature": "total Ether sent",
+      "importance": 0.04035302429343545
+    },
+    {
+      "feature": "min val sent",
+      "importance": 0.034909616962920935
+    },
+    {
+      "feature": "min value received",
+      "importance": 0.029089561332243954
+    },
+    {
+      "feature": "Sent tnx",
+      "importance": 0.026697349394162108
+    },
+    {
+      "feature": "ERC20 total Ether received",
+      "importance": 0.025177781705911614
+    }
+  ]
+}

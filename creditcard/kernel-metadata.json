@@ -1,0 +1,18 @@
+{
+  "id": "larachiefofstaff/fraudalysis-creditcard-benchmark",
+  "title": "Fraudalysis - Credit Card Fraud Benchmark",
+  "code_file": "fraudalysis_creditcard_benchmark.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "machine_shape": "gpu_t4_x2",
+  "dataset_sources": [
+    "mlg-ulb/creditcardfraud"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
